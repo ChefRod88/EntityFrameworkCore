@@ -17,10 +17,10 @@ namespace EntityFrameworkCore.Data
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             //Using SQL Server
-            ////optionsBuilder.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB; Initial " +
-            //    "Catalog=FootballLeague_EfCore; Encrypt=False");
+            optionsBuilder.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB; Initial " +
+               "Catalog=FootballLeague_EfCore; Encrypt=False");
 
-            optionsBuilder.UseSqlite("$Data Source=FootballLeague_EfCore");
+            //optionsBuilder.UseSqlite("$Data Source=FootballLeague_EfCore");
         }
     }
 }
